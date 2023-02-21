@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <title>Document</title>
+</head>
+
+<body id="quiz" onload="showQues(0)">
+
+
+
+    <div class="main">
+        <h1 id="heading">Quiz App</h1>
+        <div class="timer">
+            <p id="f1">05:00</p>
+        </div>
+        <div class="ques">
+            <h3 id="ques"></h3>
+        </div>
+        <div>
+            <input type="radio" name="opt" id="option1" class="radiobtn">
+            <label for="option1" class="label"></label>
+        </div>
+        <div>
+            <input type="radio" name="opt" id="option2" class="radiobtn">
+            <label for="option2" class="label"></label>
+        </div>
+        <div>
+            <input type="radio" name="opt" id="option3" class="radiobtn">
+            <label for="option3" class="label"></label>
+        </div>
+        <div>
+            <input type="radio" name="opt" id="option4" class="radiobtn">
+            <label for="option4" class="label"></label>
+        </div>
+
+        <br><br>
+
+        <div id="nextbtn">
+            <button id="nextbtn" onclick="nextQues()">Next</button>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
